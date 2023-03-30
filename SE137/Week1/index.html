@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+
+    <style>
+        .hide{
+            display:none;
+        }
+
+        /*comment*/
+
+        h2{
+            font-size:32px;
+        }
+
+        body{
+            background-color:rgb(99, 180, 207);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Zachary Wyeth</h1>
+    <div id="nav">
+        <hr>
+        <a href="#">BIO</a>
+        <a href="#">EDUCATION</a>
+        <a href="#">HOBBIES</a>
+        <hr>
+    </div>
+    <div id="main">
+        <div>
+            <div id="bio" class="content">
+                <h2>Bio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum harum cumque ab fuga. Ratione exercitationem voluptas esse, laborum, eaque ex, nihil dignissimos quibusdam quidem nostrum quae deleniti voluptatum libero amet.</p>
+            </div>
+            <div id="ed" class="content">
+                <h2>Education</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, aperiam. Quos repudiandae eos animi laboriosam reiciendis id, quasi sed, ea ipsum beatae totam harum magni dicta, pariatur odio architecto incidunt!</p>
+            </div>
+            <div id="hobbies" class="content">
+                <h2>Hobbies</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto id dolorem doloribus atque voluptatum, esse iusto similique inventore consectetur dolore veniam accusantium cupiditate! Quas, officiis minima exercitationem quibusdam ducimus sit?</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var a = document.querySelectorAll(`#nav a`);
+        
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, function(e){
+                e.preventDefault();
+
+                var div = document.querySelectorAll(`.content`);
+
+                for(let i = 0; i<div.length; i++)
+                {
+                div[i].classList.add(`hide`);
+                }
+
+                div[i].classList.remove(`hide`)
+            })
+        }
+        
+    </script>
+</body>
+</html>
