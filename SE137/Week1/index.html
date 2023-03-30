@@ -12,13 +12,27 @@
         }
 
         /*comment*/
-
+        h1{
+            color: darkmagenta;
+            font-size:60px
+        }
+        
         h2{
             font-size:32px;
+            color: darkorange;
         }
 
         body{
             background-color:rgb(99, 180, 207);
+        }
+        .picvert{
+            width: 400px; height: 500px;
+        }
+        .content{
+            font-size:20px;
+        }
+        .pichor{
+            width: 500px; height: 300px;
         }
     </style>
 
@@ -26,8 +40,8 @@
 
 <body>
     <h1>Zachary Wyeth</h1>
+    <hr>
     <div id="nav">
-        <hr>
         <a href="#">BIO</a>
         <a href="#">EDUCATION</a>
         <a href="#">HOBBIES</a>
@@ -36,18 +50,49 @@
     <div id="main">
         <div>
             <div id="bio" class="content">
-                <h2>Bio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum harum cumque ab fuga. Ratione exercitationem voluptas esse, laborum, eaque ex, nihil dignissimos quibusdam quidem nostrum quae deleniti voluptatum libero amet.</p>
+                <h2>My bio</h2>
+                <img src="images/ZandJ.JPG" alt="Zack and julia at the funky monkey in Mount Dora Flordia" class="picvert">
+                <p>My name is <b>Zachary Wyeth</b>. I am 19 years old. I live in a small beach town by the name of East Lyme, Connecticut. Niantic is about 50 minutes away on 95 south from new england tech. I live with my two parents and have a sister. I have lived in Niatic for my whole life but plan to move away once I have finished school. I have two dogs named Titan and Lady along with two black cats named Salem and Binx. I have a girlfriend named Julia whom i have been with for about nine months.</p>
+                <p>I came to New England Institue of Technology to pursue Cyber security but after two terms I had changed my mind and switched over to software engineering so i can focus more on coding. I plan to get a job wiht my degree back near my hometown and then hopefully move down to Virginia or somewhere even farther south.</p>
+                <hr>
             </div>
             <div id="ed" class="content">
-                <h2>Education</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, aperiam. Quos repudiandae eos animi laboriosam reiciendis id, quasi sed, ea ipsum beatae totam harum magni dicta, pariatur odio architecto incidunt!</p>
+                <h2>My education</h2>
+                <ul>
+                    <li>
+                        Lillie B Haynes Elementary
+                    </li>
+                    <li>
+                        East Lyme Middle School
+                    </li>
+                    <li>
+                        <a href="https://www.eastlymeschools.org/high-school" target="_blank">East Lyme High School</a>
+                    </li>
+                </ul>
+                <hr>
             </div>
             <div id="hobbies" class="content">
-                <h2>Hobbies</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto id dolorem doloribus atque voluptatum, esse iusto similique inventore consectetur dolore veniam accusantium cupiditate! Quas, officiis minima exercitationem quibusdam ducimus sit?</p>
+                <h2>My hobbies</h2>
+                <ol>
+                    <li>
+                        Spending time with my girlfriend
+                    </li>
+                    <li>
+                        Watching Anime
+                    </li>
+                    <li>
+                        Playing Video Games
+                    </li>
+                </ol>
+                <img src="images/eldenring.jpg" alt="Elden ring cover screen" class="pichor">
+                <hr>
+            </div>
+            <div id="footer">
+                <p>&copy; Zachary Wyeth | Week 1 Assignment</p>
+
             </div>
         </div>
+    <hr>
     </div>
 
     <script>
