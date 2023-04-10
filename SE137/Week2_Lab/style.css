@@ -85,10 +85,20 @@ a{
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-p{
+#bio p{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 1.8;
+    text-indent: 3ch;
+    font-size: large;
+    max-width: 500px;
+    margin:auto;
+    padding: 10px
+
+
 }
-#footer{
+#footer {
     background:  linear-gradient(24deg, rgba(255,255,255,1) 11%, rgb(255, 251, 251) 50%, rgb(169, 33, 33) 82%);
     width: 101%;
 }
+
+
