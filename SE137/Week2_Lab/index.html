@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Zachary Wyeth">
+    
+    <title>Week 2 | Lab</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="bar">
+        <h1>Zachary Wyeth</h1>
+        <div id="nav">
+            <a href="#">BIO</a>
+            <a href="#">EDUCATION</a>
+            <a href="#">HOBBIES</a>
+            <a href="#" id="show">SHOW ALL</a>
+            <br>
+        </div>
+    </div>
+    <div id="main">
+        <div class="contain">
+            <div id="bio" class="content">
+                <h2>About Zachary Wyeth</h2>
+                <img src="images/ZandJ.JPG" alt="Zack and julia at the funky monkey in Mount Dora Flordia" class="picvert">
+                <p>My name is <b>Zachary Wyeth</b>. I am 19 years old. I live in a small beach town by the name of East Lyme, Connecticut. Niantic is about 50 minutes away on 95 south from new england tech. I live with my two parents and have a sister. I have lived in Niatic for my whole life but plan to move away once I have finished school. I have two dogs named Titan and Lady along with two black cats named Salem and Binx. I have a girlfriend named Julia whom i have been with for about nine months.</p>
+                <p>I came to New England Institue of Technology to pursue Cyber security but after two terms I had changed my mind and switched over to software engineering so i can focus more on coding. I plan to get a job wiht my degree back near my hometown and then hopefully move down to Virginia or somewhere even farther south.</p>
+
+            </div>
+                <div id="ed" class="content">
+                    <h2>My Education</h2>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                Lillie B Haynes Elementary
+                            </li>
+                            <li>
+                                East Lyme Middle School
+                            </li>
+                            <li>
+                                <a href="https://www.eastlymeschools.org/high-school" target="_blank">East Lyme High School</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="hobbies" class="content">
+                    <h2>My Hobbies</h2>
+                    <div class="list">
+                    <ol>
+                            <li>
+                                Spending time with my girlfriend
+                            </li>
+                            <li>
+                                Watching Anime
+                            </li>
+                            <li>
+                                Playing Video Games
+                            </li>
+                    </ol>
+                    </div>
+                    <img src="images/eldenring.jpg" alt="Elden ring cover screen" class="pichor">
+                </div>
+                <div id="footer">
+                    <p>&copy; Zachary Wyeth | Week 1 Assignment</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var a = document.querySelectorAll(`#nav a`);
+        
+        for(let i=0; i<a.length-1; i++)
+        {
+            a[i].addEventListener(`click`, function(e){
+                e.preventDefault();
+
+                var div = document.querySelectorAll(`.content`);
+
+                for(let i = 0; i<div.length; i++)
+                {
+                div[i].classList.add(`hide`);
+                }
+
+                div[i].classList.remove(`hide`)
+            })
+        }
+        var s = document.querySelector(`#show`);
+        
+        
+            s.addEventListener(`click`, function(e){
+                e.preventDefault();
+
+                var div = document.querySelectorAll(`.content`);
+
+                for(let i = 0; i<div.length; i++)
+                {
+                div[i].classList.remove(`hide`);
+                }
+
+            })
+        
+
+
+
+
+        
+    </script>
+</body>
+</html>

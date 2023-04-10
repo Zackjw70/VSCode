@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+
+.bar{
+    z-index: 3;
+    text-align: center;
+    position: fixed;
+    width: 101%;
+    opacity: 1;
+    background-color: white;
+    margin-top:-130px;
+    background:  linear-gradient(356deg, rgba(255,255,255,1) 11%, rgb(255, 251, 251) 69%, rgb(169, 33, 33) 82%);
+    margin-left: -20px;
+    margin-right: -50px;
+
+
+}
+h1{
+    text-align: center;
+    border-bottom:1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav{
+    
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+#nav a{
+    text-decoration: none;
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a:link, a:visited, a:active{
+    color: black;
+    border-bottom: 1px solid black;
+}
+a:hover{
+    color: rebeccapurple;
+    border-bottom: 1px solid white;
+}
+.picvert{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 8px;
+    border: 1px solid black;
+}
+.pichor{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0px 0px 8px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Archivo',  sans-serif;
+    color: rgb(169, 33, 33);
+    
+}
+.content{
+    border-bottom: 1px solid black;
+}
+.contain{
+    position: relative;
+    margin-top: 130px;
+}
+.hide{
+    display:none;
+}
+
+a{
+    text-decoration: none;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#footer{
+    background:  linear-gradient(24deg, rgba(255,255,255,1) 11%, rgb(255, 251, 251) 50%, rgb(169, 33, 33) 82%);
+    width: 101%;
+}
