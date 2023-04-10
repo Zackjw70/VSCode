@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+html, body{
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0px;
+}
+
+main{
+    display: grid;
+    grid-template-areas:   "h h h h h h"
+                           "n n n n n n"
+                           "s s s s s s"
+                           "f f f f f f";
+    background-color: yellowgreen;
+    color:brown;
+    border: 10px solid black;
+    box-sizing: border-box;
+    min-height: 100%;
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+header{
+    grid-area: h;
+    background-color: aqua;
+}
+
+nav{
+    background-color: magenta;
+    grid-area: n;
+}
+footer{
+    background-color: red;
+    grid-area: f;
+}
+section{
+    background-color: yellow;
+    grid-area: s;
+}
+
+nav a{
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    transform: rotate(20);
+}
+
+nav a:link, nav a:visited{
+    background-color: bisque;
+    transition: all 1s;
+}
+nav a:hover, nav a:active{
+    background-color: red;
+    transition: all 1s;
+
+}

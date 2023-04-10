@@ -12,12 +12,12 @@
         }
 
         /*comment*/
-        h1{
+        .text1{
             color: darkmagenta;
             font-size:60px
         }
         
-        h2{
+        .text2{
             font-size:32px;
             color: darkorange;
         }
@@ -39,25 +39,25 @@
 </head>
 
 <body>
-    <h1>Zachary Wyeth</h1>
+    <h1 class="text1">Zachary Wyeth</h1>
     <hr>
     <div id="nav">
         <a href="#">BIO</a>
         <a href="#">EDUCATION</a>
         <a href="#">HOBBIES</a>
-        <hr>
     </div>
+    <hr>
     <div id="main">
         <div>
             <div id="bio" class="content">
-                <h2>My bio</h2>
+                <h2 class="text2">My bio</h2>
                 <img src="images/ZandJ.JPG" alt="Zack and julia at the funky monkey in Mount Dora Flordia" class="picvert">
                 <p>My name is <b>Zachary Wyeth</b>. I am 19 years old. I live in a small beach town by the name of East Lyme, Connecticut. Niantic is about 50 minutes away on 95 south from new england tech. I live with my two parents and have a sister. I have lived in Niatic for my whole life but plan to move away once I have finished school. I have two dogs named Titan and Lady along with two black cats named Salem and Binx. I have a girlfriend named Julia whom i have been with for about nine months.</p>
                 <p>I came to New England Institue of Technology to pursue Cyber security but after two terms I had changed my mind and switched over to software engineering so i can focus more on coding. I plan to get a job wiht my degree back near my hometown and then hopefully move down to Virginia or somewhere even farther south.</p>
                 <hr>
             </div>
             <div id="ed" class="content">
-                <h2>My education</h2>
+                <h2 class="text2">My education</h2>
                 <ul>
                     <li>
                         Lillie B Haynes Elementary
@@ -72,7 +72,7 @@
                 <hr>
             </div>
             <div id="hobbies" class="content">
-                <h2>My hobbies</h2>
+                <h2 class="text2">My hobbies</h2>
                 <ol>
                     <li>
                         Spending time with my girlfriend
@@ -84,16 +84,17 @@
                         Playing Video Games
                     </li>
                 </ol>
-                <img src="images/eldenring.jpg" alt="Elden ring cover screen" class="pichor">
                 <hr>
+                <img src="images/eldenring.jpg" alt="Elden ring cover screen" class="pichor">
             </div>
+            <hr>
             <div id="footer">
                 <p>&copy; Zachary Wyeth | Week 1 Assignment</p>
 
             </div>
         </div>
-    <hr>
     </div>
+    <hr>
 
     <script>
         var a = document.querySelectorAll(`#nav a`);
