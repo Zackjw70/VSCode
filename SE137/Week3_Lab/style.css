@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.hide{
+    display: none;
+}
+main{
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    border: 10px solid black;
+    box-sizing: border-box;
+    width: 1112px;
+    position: relative;
+    margin: 0 auto;
+    min-height: 100%;
+    grid-template-areas: "t t t t t t"
+                         "b b b b b b"
+                         "b b b b b b"
+                         "h h h h s s"
+                         "h h h h s s"
+                         "f f f f f f";
+}
+#bio{
+    grid-area: b;
+    background-color: #4A0404;
+    color: #ffffff;
+}
+#hobbies{
+    grid-area: h;
+    background-color: #4A0404;
+    color: white;
+    height: 300px;
+    background-image: url(images/Darksouls3background.jpg);
+    width: 728px;
+}
+header{
+    grid-area: t;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#ed{
+    grid-area: s;
+    background-color: #4A0404;
+    color: white;
+    height: 300px;
+    width: 364px;
+}
+footer{
+    grid-area: f;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+h1, h2{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 36px;
+}
+p, li{
+    font-family: 'Knewave', cursive;
+    font-size: 24px ;
+    padding: 15px;
+}
+footer p{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+html{
+    background-color: black;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a :hover{
+    color: black;
+}
+#ed h2, #hobbies h2{
+    text-align: center; padding-top: -10px;
+}
+h2{
+    margin-bottom: -40px;
+    margin-top: 10px;
+}
+#bio h2{
+    margin-left: 20px;
+}
+#hobbies p{
+    font-size: 10px;
+    text-align: right;
+    position: bottom;
+}
+#ed h2{
+    margin-bottom: 0px;
+}
+
