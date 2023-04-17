@@ -46,6 +46,7 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    margin: -20px;
 }
 #ed{
     grid-area: s;
@@ -59,6 +60,7 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
+    margin: -20px;
 }
 h1, h2{
     font-family: 'Fredericka the Great', cursive;
