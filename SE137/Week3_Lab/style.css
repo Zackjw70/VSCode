@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 html{
-    box-sizing: border-box;
+
     margin: 0px;
 }
 .hide{
@@ -18,12 +18,11 @@ main{
     border: 10px solid black;
     box-sizing: border-box;
     width: 1112px;
-    position: relative;
     margin: 0 auto;
     min-height: 100%;
     grid-template-areas: "t t t t t t"
-                         "b b b b b b"
-                         "b b b b b b"
+                         "b b b b b s"
+                         "b b b b b s"
                          "h h h h s s"
                          "h h h h s s"
                          "f f f f f f";
