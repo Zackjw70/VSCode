@@ -71,7 +71,7 @@ header h2{
 .rightcol{
     background-color: #393939;
     width: 360px;
-    height: 918px;
+    min-height: 918px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: white;
