@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 400;
+    color: #E3E3E3;
+    font-size: 12px;
+    
+}
+main{
+    display: flex;
+    width: 1366px;
+    height: 768px;
+}
+nav{
+    background-color: #505050;
+    width: 45px;
+    margin-top: 23px;
+    height: 730px;
+}
+aside{
+    background-color: #373737;
+    display: flex;
+    resize: none;
+    width: 0px;
+    color: aliceblue;
+    overflow: hidden;
+    margin-top: 23px;
+    height: 730px;
+    z-index: 2;
+    justify-content: center;
+}
+textarea{
+    background-color: black;
+    resize: none;
+    width: 1177px;
+    color: white;
+    outline: 0;
+    border: 0;
+    z-index: 1;
+}
+.sidea{
+    display: block;
+    background-color: greenyellow;
+    background: url(images/sprites.png) no-repeat -169px -25px;
+	width: 12px;
+	height: 12px;
+    margin-left: 15px ;
+    margin-top: 20px;
+    transform: scale(2);
+}
+.sidea:hover
+{
+    background: url(images/sprites.png) no-repeat -169px -214px;
+	width: 12px;
+	height: 12px;
+    margin-left: 15px ;
+    margin-top: 15px;
+}
+.bt{
+    color: #E3E3E3;
+    width: 136px;
+    width: 144px;
+}
+.bh{
+    color: white;
+    margin-left: 2px;
+    width: 144px;
+}
+.close{
+    width: 144px;
+}
+.text{
+    width: 100px;
+    float: right;
+}
+.tabs{
+    display: inline-block;
+    width: 173px;
+    height: 34px;
+    background-color: #373737;
+    margin-right: 0px;
+    text-decoration: none;
+    color: #C2C2C2;
+}
+.tabs span
+{
+    top: 11px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #C2C2C2;
+    font-weight: 400;
+    padding-top: 17px;
+    height: 34px;
+    margin-left: 6px;
+    position: relative;
+    top: 9px;
+    color: #C2C2C2;
+}
+.rightbox{
+    background-color: black;
+    width: 1177px;
+    height: 730px;
+    margin-top: 23px;
+}
+.header{
+    width: 1366px;
+    height: 23px;
+    background-color: #505050;
+    font-family: 'Roboto', sans-serif;
+    color: #E3E3E3;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+    position: fixed;
+    top: auto;
+    
+}
+footer{
+    width: 1366px;
+    height: 14px;
+    background-color: #0254A0;
+    color: white;
+    margin-top: 754px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 10px;
+}
+.sillyboxes{
+    background: url(images/sprites.png) no-repeat -217px -2px;
+	width: 11px;
+	height: 11px;
+    display: block;
+    transform: scale(2);
+    margin-left: 15px;
+    margin-top: 35px;
+}
+.sillyboxes:hover{
+    background: url(images/sprites.png) no-repeat -217px -191px;
+	width: 11px;
+	height: 11px;
+}
+.trashass{
+    background: url(images/sprites.png) no-repeat -458px 0;
+	width: 11px;
+	height: 13px;
+    display: block;
+    margin-left: 15px;
+    transform: scale(2);
+    margin-top: 621px;
+}
+.trashass:hover{
+    background: url(images/sprites.png) no-repeat -458px -189px;
+	width: 11px;
+	height: 13px;
+    display: block;
+    margin-left: 15px;
+}
+.setting{
+    background: url(images/sprites.png) no-repeat -433px -1px;
+	width: 12px;
+	height: 12px;
+    display: inline-block;
+    margin-top: 0px;
+    position: absolute;
+    top: 5px;
+    left: 1345px;
+}
+.setting:hover{
+    background: url(images/sprites.png) no-repeat -433px -190px;
+	width: 12px;
+	height: 12px;
+}
+footer p{
+    padding-left: 18px;
+}
+.change{
+    width: 1321px;
+}
+.file{
+    margin-left: 44px;
+}
+.header
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+.weefee{
+    background: url(images/sprites.png) no-repeat -410px -1px;
+	width: 11px;
+	height: 12px;
+    display: inline-block;
+    margin-left: 1285px;
+    position: absolute;
+}
+.weefee:hover{
+    background: url(images/sprites.png) no-repeat -410px -190px;
+	width: 11px;
+	height: 12px;
+}
+.header span{
+    padding-right: 10px;
+    flex: auto;
+}
+.path{
+    color: #C2C2C2;
+    margin-top: 4px;
+    margin-left: 9px;
+}
+.path a{
+    color: 
+    #0058A9;
+}
+ul{
+    list-style-position: inside ;
+    margin-top: 0px;
+}
+.paper li{
+    list-style-image: url(images/paper.png);
+    padding-top: 5px;
+}
+.fire li{
+    list-style-image: url(images/fire.png);
+    padding-top: 5px;
+}
+.bordertime{
+    border-top: 1px solid #7B7575;
+    border-bottom: 1px solid #7B7575;
+    width: 165px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cringearrow{
+    background: url(images/sprites.png) no-repeat -313px -123px;
+	width: 12px;
+	height: 8px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.cringearrow:hover{
+    background: url(images/sprites.png) no-repeat -313px -312px;
+	width: 12px;
+	height: 8px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.bs{
+    position: relative;
+    top: 5px;
+    
+}
+.cringeplane{
+    background: url(images/sprites.png) no-repeat -170px -121px;
+	width: 11px;
+	height: 12px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: 11px;
+}
+.cringeplane:hover{
+    background: url(images/sprites.png) no-repeat -170px -310px;
+	width: 11px;
+	height: 12px;
+}
+.xmarkcool{
+    background: url(images/sprites.png) no-repeat -314px -2px;
+	width: 10px;
+	height: 10px;
+    display: inline-block;
+    margin-left: 95px;
+    position: relative;
+    top: 11px;
+}
+.xmarkcool:hover{
+    background: url(images/sprites.png) no-repeat -314px -191px;
+	width: 10px;
+	height: 10px;
+}
+.ttext:hover{
+    color: white;
+}

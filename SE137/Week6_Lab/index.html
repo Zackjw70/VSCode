@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Zachary Wyeth">
+    <meta name="Description" content="Week 6 Lab assignment">
+    <link rel="stylesheet" href="style.css">
+    <title>Week 6 Lab | Zachary Wyeth</title>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <span class="file bs">File</span><span class="bs">Edit</span><span class="bs">Help</span>
+            <span class="title">Week 6 Assignment</span>
+            <a href="#" class="setting"></a>
+        </div>
+        <nav class="nav">
+            <a href="#" class="sidea"></a>
+            <a href="#" class="sillyboxes"></a>
+            <a href="#" class="trashass"></a>
+        </nav>
+        <aside class="close">
+            <div>
+                
+                <div class="bordertime">
+                    <a href="#" class="cringearrow"></a>
+                    <span class="bh">Files</span>
+                </div>
+                <ul class="paper">
+                    <li class="bt">File 1</li>
+                    <li>File 1</li>
+                    <li>File 1</li>
+                    <li>File 1</li>
+                </ul>
+                
+                <div class="bordertime">
+                    <a href="#" class="cringearrow"></a>
+                    <span class="bh">Other Stuff</span>
+                </div>
+                <ul class="fire">
+                    <li class="bt">Stuff 2</li>
+                    <li>Stuff 2</li>
+                </ul>
+            </div>
+
+        </aside>
+        <div class="rightbox">
+            <div class="topnav">
+                <div class="tabs">
+                    <a href="#" class="cringeplane"></a>
+                    <span class="ttext">Tab 1</span>
+                    <a href="#" class="xmarkcool"></a>
+                </div>
+                <div class="tabs">
+                    <a href="#" class="cringeplane"></a>
+                    <span class="ttext">Tab 2</span>
+                    <a href="#" class="xmarkcool"></a>
+                </div>
+                <div class="tabs">
+                    <a href="#" class="cringeplane"></a>
+                    <span class="ttext">Tab 3</span>
+                    <a href="#" class="xmarkcool"></a>
+                </div>
+            </div>
+            <div class="path">
+                <span><a href="#">SE_137</a>><a href="#">W6</a>><a href="#">Homework</a>><a href="#" class="tabswap">Tab 1</a></span>
+            </div>
+            <textarea>
+                
+            </textarea>
+        </div>
+        <footer>
+            <span>Text goes here</span>
+            <a href="#" class="weefee"></a>
+        </footer>
+    </main>
+    <script>
+        
+
+        var a = document.querySelector(`nav a`);
+        var aside = document.querySelector(`aside`)
+        var textarea = document.querySelector(`textarea`)
+        var rightbox = document.querySelector(`.rightbox`)
+
+        a.addEventListener(`click`, e=>{
+            e.preventDefault();
+            aside.classList.toggle(`close`)
+            textarea.classList.toggle(`change`)
+            rightbox.classList.toggle(`change`)
+        });
+
+        var div = document.querySelectorAll(`.topnav div`)
+        var p = document.querySelector(`.tabswap`)
+
+
+        for(let i=0; i<div.length; i++)
+        {
+            div[i].addEventListener(`click`, e=>{
+                e.preventDefault();
+                for(let i=0; i<div.length; i++)
+                {
+                    div[i].style.backgroundColor = `#373737`;
+                }
+
+                e.currentTarget.style.backgroundColor = `black`;
+
+                e.currentTarget.querySelector("a")
+                p.innerHTML = `${e.currentTarget.querySelector("span").innerHTML}`;
+
+            })
+        }
+
+
+    </script>
+</body>
+</html>

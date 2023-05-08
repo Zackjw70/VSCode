@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Nav</title>
+    <style>
+        a{
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background-color: #999;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Tab 1</a>
+        <a href="#">Tab 2</a>
+    </nav>
+    <p>
+        Breadcrumbs >> tab 1
+    </p>
+    <script>
+        var a = document.querySelectorAll(`nav a`)
+        var p = document.querySelector(`p`)
+
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, e=>{
+                e.preventDefault();
+                for(let i=0; i<a.length; i++)
+                {
+                    a[i].style.backgroundColor = `#999`;
+                }
+
+                e.target.style.backgroundColor = `black`;
+
+                p.innerHTML = `Breadcrumbs >> ${e.target.innerHTML}`;
+            })
+        }
+
+    </script>
+</body>
+</html>

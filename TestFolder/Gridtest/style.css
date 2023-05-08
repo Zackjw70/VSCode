@@ -1,0 +1,37 @@
+body{
+    height: 1000px;
+    display: grid;
+    grid-template-areas: "l l l r r r"
+                         "l l l r r r"
+                         "l l l r r r"
+                         "l l l r r r"
+                         "b b b b b b"
+                         "b b b b b b";
+
+}
+.left{
+    background-color: red;
+    grid-area: l;
+}
+.right{
+    background-color: blue;
+    grid-area: r;
+}
+.bottom{
+    background-color: black;
+    grid-area: b;
+    color: white;
+    display: grid;
+    grid-template-areas: "l l l r r r"
+                         "l l l r r r";
+}
+.bl{
+    grid-area: l;
+    background-color: white;
+    color: black;
+}
+.br{
+    grid-area: r;
+    background-color: bisque;
+    color: black;
+}
