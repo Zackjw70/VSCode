@@ -1,0 +1,515 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+/*font-family: 'Inconsolata', monospace;*/
+#main{
+    height: 1080px;
+    width: 1920px;
+    display: flex;
+    background-color: rgb(205, 205, 205);
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+#nav{
+    background-color: black;
+    width: 445px;
+    height: 1080px;
+    padding: 0px;
+    display: flex;
+
+}
+#navmain{
+    background-color: black;
+    width: 445px;
+    height: 1080px;
+    padding: 0px;
+    display: flex;
+
+}
+#navfeat{
+    background-color: black;
+    width: 445px;
+    height: 1080px;
+    padding: 0px;
+    display: flex;
+
+}
+.content{
+    background-color: white 100% black 20%;
+}
+.titles{
+    font-family: 'Inconsolata', monospace;
+    font-size: 50px;
+    font-weight: 400px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-left: 85px;
+    margin-top: 100px;
+    text-decoration: none;
+    top: 156px;
+}
+.links{
+    font-family: 'Inconsolata', monospace;
+    font-size: 50px;
+    font-weight: 400px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-left: 85px;
+    margin-top: 245px;
+    text-decoration: none;
+    position: relative;
+    top: 245px;
+
+
+    
+}
+#botlink{
+    position: relative;
+    top: 342px;
+}
+.linksfeat{
+    font-family: 'Inconsolata', monospace;
+    font-size: 50px;
+    font-weight: 400px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-left: 85px;
+    margin-top: 245px;
+    text-decoration: none;
+    position: relative;
+    top: 245px;
+
+
+    
+}
+#botlinkfeat{
+    position: relative;
+    top: 342px;
+}
+.footie{
+    position: relative;
+    top: 483px;
+    background-color: #ABBEFF;
+    width: 445px;
+    height: 68px;
+    margin-bottom: 97px;
+    font-size: 8px;
+}
+.footie p{
+    position: relative;
+    top: 32px;
+    left: 15px;
+}
+.githead{
+    font-size: 50px;
+    color: #B00000;
+    position: relative;
+    top: 350px;
+    left: 0px;
+}
+.gitlinks{
+    color: white;
+    position: relative;
+    top: 380px;
+    left: 50px;
+    font-size: 20px;
+}
+.tiktok{
+    display:inline-block;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: 470px;
+    left: 30px;
+    margin-right: 50px;
+    
+}
+.insta{
+    display:inline-block;
+    height: 121px;
+    width: 121px;
+    position: relative;
+    top: 450px;
+    left: 70px;
+}
+#content{
+    height: 1080px;
+    width: 1475px;
+}
+.mainimg
+{
+    display: block;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    width: 909px;
+    height: 540px;
+}
+.righttexthead{
+    color: #B00000;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    margin-left: 1000px;
+    margin-top: -300px;
+}
+.righttextbelow{
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    margin-left: 1000px;
+}
+.righttextcontent{
+    font-size: 24px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    margin-left: 1050px;
+    width: 324px;
+    text-decoration: none;
+    color: black;
+}
+.bottomheader
+{
+    color: #B00000;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    left: 500px;
+    top: 75px;
+    width: 400px;
+}
+.bio{
+    font-size: 32px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    margin-top: 100px;
+    width: 800px;
+    margin-left: 350px;
+
+}
+.feathead{
+    color: #B00000;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    left: 300px ;
+    top: 50px;
+}
+.featdesc{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    font-size: 36px;
+    right: 240px;
+    top: 50px;
+}
+.featimg{
+    display: block;
+    width: 871px;
+    height: 510px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.featnetlink{
+    text-decoration: none;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    font-size: 36px;
+    position: relative;
+    left: 380px ;
+    top: 50px;
+
+}
+.featnetlink:hover{
+    text-decoration: underline;
+    color: white;
+    
+}
+.featrighttexthead{
+    color: #B00000;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    font-size: 50px;
+    left: 1050px;
+    margin-top: -700px;
+}
+.featdescript
+{
+    color: black;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    font-size: 36px;
+    left: 975px;
+    width: 458px
+}
+.projhead{
+    color: #B00000;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    position: relative;
+    left: 600px ;
+    top: 20px;
+    width: 500px;
+}
+.topleftproj{
+    position: relative;
+    left: 125px;
+    top: 30px;
+    font-size: 12px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    color: black;
+    width: 527px;
+}
+.theimg{
+    display: inline-block;
+    width: 527px;
+    height: 310px;
+
+}
+.textheadproj{
+    font-size: 24px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.toprightproj{
+    position: relative;
+    left: 850px;
+    top: -450px;
+    font-size: 12px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    color: black;
+    width: 527px;
+
+}
+.bottomrightproj{
+    position: relative;
+    left: 850px;
+    top: -940px;
+    font-size: 12px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    color: black;
+    width: 527px;
+}
+.bottomleftproj{
+    position: relative;
+    left: 125px;
+    top: -460px;
+    font-size: 12px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    color: black;
+    width: 527px;
+}
+.mini{
+    display: none;
+    width: 0px;
+}
+.lg
+{
+    display: show;
+}
+
+
+
+
+
+@media(max-width: 1125px)
+{
+    #main{
+        width: 1125px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    
+    #nav{
+        height: 3100px;
+        margin-top: 2000px;
+    }
+    #navfeat{
+        height: 2900px;
+        margin-top: 2000px;
+    }
+    #contents{
+        width: 1125px;
+
+    }
+    .lg{
+        display: none;
+        width: 0px;
+    }
+    .mini{
+        display: block;
+        color: white;
+    }
+    .theimg{
+        width: 445px;
+    }
+    .gitsilly{
+        position: relative;
+        top: -100px;
+    }
+    .linksfeat{
+        top: 250px;
+        color: white;
+        left: -275px;
+    }
+    #botlinkfeat{
+        top: 350px;
+        left: -565px;
+    }
+    .links{
+        top: 150px;
+    }
+    #botlink{
+        top: 150px;
+    }
+    .projhead{
+        color: white;
+        position: relative;
+        top: 300px;
+    }
+    .textheadproj{
+        color: white;
+        size: 20px;
+    }
+    .topleftproj{
+        position: relative;
+        color: white;
+        left: 0px;
+        width: 768px;
+        top: 300px;
+        width: 445px;
+    }
+    .toprightproj{
+        position: relative;
+        color: white;
+        left: 0px;
+        width: 768px;
+        top: 300px; 
+        width: 445px;
+    }
+    .bottomrightproj{
+        position: relative;
+        color: white;
+        left: 0px;
+        width: 768px;
+        top: 300px; 
+        width: 445px;
+    }
+    .bottomleftproj{
+        position: relative;
+        color: white;
+        left: 0px;
+        width: 768px;
+        top: 300px; 
+        width: 445px;
+    }
+    .feathead{
+        color: #B00000;
+        position: relative;
+        top: 400px; 
+        left: 25px;
+    }
+    .featdesc{
+        position: relative;
+        top: 400px; 
+        left: -510px;
+        color: white;
+        margin-left: 0px;
+        font-size: 24px;
+    }
+    .featimg{
+        position: relative;
+        color: white;
+        left: 0px;
+        margin-left: 0px;
+        top: 350px; 
+        width: 445px;
+        height: 300px;
+    }
+    .featnetlink{
+        color: white;
+        left:100px;
+        top: 400px;
+    }
+    .featnetlink:hover{
+        color: #B00000;
+    }
+    .featrighttexthead{
+        left: 80px;
+        top: 1200px;
+    }
+    .featdescript{
+        position: relative;
+        top: 1200px;
+        left: 0px;
+        color: white;
+    }
+    .tiktok, .footie{
+        top: 1430px;
+    }
+    .insta{
+        top: 1420px;
+    }
+    .mainimg{
+        width: 445px;
+        height: 300px;
+        margin-left: 0px;
+        left: 0px;
+        top: 600px;
+    }
+    .righttexthead{
+        left: -975px;
+        color: white;
+        top: 500px;
+    }
+    .righttextbelow{
+        left: -990px;
+        color: white;
+        top: 800px;
+    }
+    .righttextcontent{
+        left: -990px;
+        color: white;
+        top: 850px;
+    }
+    .bottomheader{
+         left: 100px;
+         top: 950px;
+    }
+    .bio{
+        width: 400px;
+        left: -300px;
+        top: 900px;
+    }
+    #navmain{
+        height: 2900px;
+        margin-top: 2000px;
+    }
+
+}
+
