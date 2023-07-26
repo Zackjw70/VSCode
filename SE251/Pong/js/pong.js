@@ -4,6 +4,8 @@ var timer = setInterval(main, 1000/60)
 
 var fy = .85
 
+score = document.querySelectorAll(`#score div`)
+
 var player1 = new Player()
 var player2 = new Player()
 
@@ -121,7 +123,8 @@ function main()
         ball.vy = -ball.vy
         
     }
-
+    score[0].innerText = player[0].score
+    score[1].innerText = player[1].score
     pad[1].draw()
     pad[0].draw()
     ball.draw()
