@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Zachary Wyeth">
+    
+    <title>Week 2 Demo</title>
+</head>
+<body>
+    <script>
+        class Person
+        {
+            constructor(fname=`John`, lname=`Doe`, age=30, height=`8'2"`)
+            {
+                this.name = 
+                {
+                    first:fname,
+                    last:lname
+                }
+                this.fname=fname;
+                this.lname=lname;
+                this.age=age;
+                this.height=height;
+
+            }
+
+            setProps(obj)
+            {
+                for(let props in obj)
+                {
+                    if(this[props]!== undefined)
+                    {
+                        this[props] = obj[props]
+                    }
+                }
+                return this;
+            }
+            whatsMyName()
+            {
+                console.log(`${this.name.first} ${this.name.last}`)
+                return this;
+            }
+        }
+        var bob = new Person(`bob`)
+        var fred = new Person()
+        console.log(bob.whatsMyName().setProps({name:{first:`Robert`, last:`Smith`}}).whatsMyName())
+
+        
+        
+    </script>
+</body>
+</html>

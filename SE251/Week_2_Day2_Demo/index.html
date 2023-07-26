@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Day 2 Demo</title>
+    
+</head>
+<body>
+    <div id="messages">
+        <p>Hi</p>
+        <p>Bye</p>
+    </div>
+    <script>
+        var p = document.querySelectorAll(`#messages p`);
+        console.log(Array.from(p))
+
+        for(let i=0; i<p.length; i++)
+        {
+            p[i].innerHTML += `10`
+        }
+    </script>
+</body>
+</html>

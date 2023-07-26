@@ -19,7 +19,7 @@ ball.w = 20
 ball.h = 20
 ball.vx = -3
 ball.vy = -2
-ball.color = `white`
+ball.color = `hotpink`
 
 
 function main()
