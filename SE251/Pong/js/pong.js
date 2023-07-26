@@ -4,6 +4,14 @@ var timer = setInterval(main, 1000/60)
 
 var fy = .85
 
+var player1 = new Player()
+var player2 = new Player()
+
+var player = [player1, player2]
+
+player[0].pad = new Box()
+player[1].pad = new Box()
+
 var p1 = new Box();
 p1.w = 20
 p1.h = 150
