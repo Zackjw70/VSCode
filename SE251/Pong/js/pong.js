@@ -13,6 +13,9 @@ var pad = []
 player[0].pad = new Box()
 player[1].pad = new Box()
 
+player[0].score = 0
+player[1].score = 0
+
 pad[0] = player[0].pad
 pad[1] = player[1].pad
 
@@ -95,11 +98,15 @@ function main()
     {
         ball.x = c.width/2
         ball.y = c.height/2
+        player[1].score++
+        console.log(`${player[0].score} | ${player[1].score}`)
     }
     if(ball.x > c.width-ball.h/2)
     {
         ball.x = c.width/2
         ball.y = c.height/2
+        player[0].score++
+        console.log(`${player[0].score} | ${player[1].score}`)
         
     }
     if(ball.y < 0+ball.h/2)
