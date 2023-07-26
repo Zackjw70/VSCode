@@ -28,6 +28,7 @@ pad[0].x = 0 + pad[0].w/2
 pad[1].w = 20
 pad[1].h = 150
 pad[1].x = c.width - pad[1].w/2
+pad[1].dir = -1
 
 var ball = new Box();
 ball.w = 20
@@ -59,42 +60,27 @@ function main()
         pad[1].vy += pad[1].force
     }
     
+    for(let i=0; i<player.length; i++) 
+        {
+            pad[i].vy *= fy
+            pad[i].move()
+            if(pad[i].y > c.height-pad[i].h/2)
+            {
+                pad[i].y = c.height-pad[i].h/2
+            }
+            if(pad[i].y < 0+pad[i].h/2)
+            {
+                pad[i].y = 0+pad[i].h/2
+            }
+            if(ball.collide(pad[i]))
+            {
+                ball.x = (pad[i].x + (pad[i].w/2 + ball.w/2)*pad[i].dir)
+                ball.vx = 3 * pad[i].dir
+            }
+        }
     
-    
-    pad[1].vy *= fy
-    pad[0].vy *= fy
-    pad[0].move()
-    pad[1].move()
+
     ball.move()
-
-    if(pad[0].y < 0+pad[0].h/2)
-    {
-        pad[0].y = 0+pad[0].h/2
-    }
-    if(pad[0].y > c.height-pad[0].h/2)
-    {
-        pad[0].y = c.height-pad[0].h/2
-    }
-    if(pad[1].y < 0+pad[1].h/2)
-    {
-        pad[1].y = 0+pad[1].h/2
-    }
-    if(pad[1].y > c.height-pad[1].h/2)
-    {
-        pad[1].y = c.height-pad[1].h/2
-    }
-
-    if(ball.collide(pad[0]))
-    {
-        ball.x = pad[0].x + pad[0].w/2 + ball.w/2
-        ball.vx = -ball.vx
-    }
-    if(ball.collide(pad[1]))
-    {
-        ball.x = pad[1].x - pad[1].w/2 - ball.w/2
-        ball.vx = -ball.vx
-    }
-
 
     if(ball.x < 0)
     {
@@ -123,9 +109,10 @@ function main()
         ball.vy = -ball.vy
         
     }
-    score[0].innerText = player[0].score
-    score[1].innerText = player[1].score
-    pad[1].draw()
-    pad[0].draw()
+    for(let i=0; i<player.length; i++) 
+    {
+        score[i].innerText = player[i].score
+        pad[i].draw()
+    }
     ball.draw()
 }
