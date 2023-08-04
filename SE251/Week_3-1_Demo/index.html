@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        label{
+            display: block;
+        }
+        color{
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <label for="num"></label>
+    <input type="range" id="num" min="0" max="100">
+
+    <input type="color" id="col">
+    <label for="col" class="color">0</label>
+
+
+    <script>
+        num.value = 0
+        document.querySelector(`label[for="num"]`).innerHTML = num.value
+        
+        num.addEventListener(`input`, show)
+        col.addEventListener(`change`, color)
+
+        function show(e)
+        {
+            var id = this.id
+
+            document.querySelector(`label[for="${id}"]`).innerHTML = this.value;
+        }
+        function color(e)
+        {
+            var id = this.id
+
+            document.querySelector(`label[for="${id}"]`).innerHTML = this.value;
+            document.querySelector(`label[for="${id}"]`).color = this.value;
+
+        }
+
+    </script>
+</body>
+</html>
