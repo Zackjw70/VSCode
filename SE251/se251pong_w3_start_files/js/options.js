@@ -23,8 +23,17 @@
         .Show the player's key in the output div 
 -----------*/
 
+var changeFill = document.querySelectorAll(`.fill`)
+
+function options(i)
+{
+    player[i].fill = changeFill[i].value;
+    pad[i].fill = changeFill[i].value;
+}
+
 var opt = document.querySelector(`h2`).addEventListener(`click`, display)
 console.log(opt)
+
 
 
 function display()
@@ -32,4 +41,18 @@ function display()
     document.querySelector(`.sides`).classList.toggle("hidden")
     console.log(`click`)
 }
+
+for (let i = 0; i < player.length; i++)
+{
+    changeFill[i].addEventListener(`change`, function(){
+        player[i].setProps({fill:changeFill[i].value})
+        options(i)
+    })
+    
+
+    options(i)
+}
+
+
+
 
