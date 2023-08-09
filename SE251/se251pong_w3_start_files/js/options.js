@@ -29,6 +29,7 @@ var changeUp = document.querySelectorAll(`.u`)
 var changeDown = document.querySelectorAll(`.d`)
 var changeStraight = document.querySelectorAll(`.s`)
 var sideSelect = document.querySelector(`.sides`)
+var swapMode = document.querySelector(`.switchcolor`)
 
 function options(i)
 {
@@ -42,7 +43,15 @@ var opt = document.querySelector(`h2`).addEventListener(`click`, display)
 console.log(opt)
 
 
+swapMode.addEventListener(`click`, function(){
+    document.querySelector(`main`).classList.toggle("textdark")
+    document.querySelector(`canvas`).classList.toggle("canvaslight")
+    playerswapcolor = document.querySelectorAll(`.op`)
+    playerswapcolor[0].classList.toggle("textdark")
+    playerswapcolor[1].classList.toggle("textdark")
 
+    document.querySelector(`body`).classList.toggle("backgroundlight")
+})
 
 
 function display()
@@ -89,6 +98,8 @@ for (let i = 0; i < player.length; i++)
     changeStraight[i].addEventListener(`focus`, function(){
         currentState = `pause`
     })
+
+    
 
     
     

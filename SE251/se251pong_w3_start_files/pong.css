@@ -48,3 +48,12 @@ canvas{
     grid-template-columns: auto auto auto;
     
 }
+.canvaslight{
+    border: 1px solid black;
+}
+.textdark{
+    color: black;
+}
+.backgroundlight{
+    background-color: white;
+}
