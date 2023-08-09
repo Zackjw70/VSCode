@@ -40,9 +40,7 @@ function options(i)
 
 var opt = document.querySelector(`h2`).addEventListener(`click`, display)
 console.log(opt)
-sideSelect.addEventListener(`focus`, function(){
-    currentState = `pause`
-})
+
 
 
 
@@ -79,6 +77,17 @@ for (let i = 0; i < player.length; i++)
         changeStraight[i].value = e.key
         player[i].keys.s = changeStraight[i].value
         
+    })
+
+    changeUp[i].addEventListener(`focus`, function(){
+        currentState = `pause`
+    })
+
+    changeDown[i].addEventListener(`focus`, function(){
+        currentState = `pause`
+    })
+    changeStraight[i].addEventListener(`focus`, function(){
+        currentState = `pause`
     })
 
     
