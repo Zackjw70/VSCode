@@ -24,15 +24,26 @@
 -----------*/
 
 var changeFill = document.querySelectorAll(`.fill`)
+var changeStroke = document.querySelectorAll(`.stroke`)
+var changeUp = document.querySelectorAll(`.u`)
+var changeDown = document.querySelectorAll(`.d`)
+var changeStraight = document.querySelectorAll(`.s`)
+var sideSelect = document.querySelector(`.sides`)
 
 function options(i)
 {
     player[i].fill = changeFill[i].value;
-    pad[i].fill = changeFill[i].value;
+    pad[i].fill = player[i].fill;
+    pad[i].stroke = changeStroke[i].value;
+
 }
 
 var opt = document.querySelector(`h2`).addEventListener(`click`, display)
 console.log(opt)
+sideSelect.addEventListener(`focus`, function(){
+    currentState = `pause`
+})
+
 
 
 
@@ -44,10 +55,34 @@ function display()
 
 for (let i = 0; i < player.length; i++)
 {
-    changeFill[i].addEventListener(`change`, function(){
+    changeFill[i].addEventListener(`input`, function(){
         player[i].setProps({fill:changeFill[i].value})
         options(i)
     })
+    changeStroke[i].addEventListener(`input`, function(){
+        player[i].setProps({fill:changeStroke[i].value})
+        options(i)
+    })
+    changeUp[i].addEventListener(`keydown`, function(e){
+        changeUp[i].value = e.key
+        player[i].keys.u = changeUp[i].value
+        
+    })
+    changeDown[i].addEventListener(`keydown`, function(e){
+        changeDown[i].value = e.key
+        player[i].keys.d = changeDown[i].value
+        
+    })
+
+    
+    changeStraight[i].addEventListener(`keydown`, function(e){
+        changeStraight[i].value = e.key
+        player[i].keys.s = changeStraight[i].value
+        
+    })
+
+    
+    
     
 
     options(i)
