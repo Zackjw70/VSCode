@@ -50,11 +50,13 @@
         const newButton = document.createElement(`button`);
         newButton.appendChild(document.createTextNode(`New Game`));
         newButton.setAttribute(`id`, `newGame`)
+        newButton.setAttribute(`data-load`, `false`)
         newMenu.appendChild(newButton)
 
         const loadButton = document.createElement(`button`)
         loadButton.appendChild(document.createTextNode(`Continue`))
         loadButton.setAttribute(`id`, `loadGame`)
+        newButton.setAttribute(`data-load`, `true`)
         newMenu.appendChild(loadButton)
 
         const highScores = document.createElement(`button`);
@@ -86,15 +88,13 @@
         newButton.addEventListener(`click`, (e)=>{
             console.log(`NEW`)
             $(`#new`).animate({opacity: 0}, 1000, function(){
-                window.location = `lobby.html`
-                localStorage.setItem("load", false)
+                window.location = `lobby.html?${e.target.dataset.load}`
             });
         })
         loadButton.addEventListener(`click`, (e)=>{
             console.log(`LOAD`)
             $(`#new`).animate({opacity: 0}, 1000, function(){
-                window.location = `lobby.html`
-                localStorage.setItem("load", true)
+                window.location = `lobby.html?${e.target.dataset.load}`
             });
         })
         highScores.addEventListener(`click`, (e)=>{
