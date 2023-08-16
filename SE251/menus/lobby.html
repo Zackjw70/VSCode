@@ -19,7 +19,7 @@
             <div id="menus">
                     <div class="op">
                         <h2>Player 1</h2><div></div> <div></div>
-                        <label>NAME</label><input class="name" type="text"><div class="output"></div>
+                        <!--<label>NAME</label><input class="name" type="text"><div class="output"></div>-->
                         <label>FILL</label><input class="fill" type="color"><div class="output"></div>
                         <label>STROKE</label><input class="stroke" type="color"><div class="output"></div>
                         <label>HEIGHT</label><input class="h" type="range" min="20" max="140" ><div class="output"></div>
@@ -38,7 +38,38 @@
     </main>
     <script src="js/User.js"></script>
     <script>
-        console.log(localStorage.getItem("load"))
+        /*var urlParams = new URLSearchParams(window.location.search);
+        console.log(urlParams.get(`load`))*/
+        //alert(location.search)
+        let params = (new URL(document.location)).searchParams;
+        let name = params.get(`load`);
+        alert(name)
+
+
+        var p1;
+
+        if(urlParams.get(`load`)==="true")
+        {
+            p1 = new User().setProps(JSON.parse(localStorage.getItem(`p1`)))
+            console.log(p1)
+        }
+        else
+        {
+            p1 = new User()
+        }
+
+        const fill = document.querySelectorAll(`input`);
+        for(let i = 0; i<fill.length; i++)
+        {
+            fill[i].value = (p1[fill[i].classList[0]]==undefined)?p1.keys[fill[i].classList[0]]: p1[fill[i].classList[0]];
+            fill[i].nextElementSibling.innerHTML = (p1[fill[i].classList[0]]==undefined)?p1.keys[fill[i].classList[0]]: p1[fill[i].classList[0]];
+        }
+        
+        
+        
+        
+
+        
 
     </script>
 </body>

@@ -28,6 +28,13 @@
     </main>
     <script src="js/User.js"></script>
     <script>
+        var p1 = new User();
+        p1.fill = `#ff0000`;
+        console.log(p1)
+        localStorage.setItem(`p1`,JSON.stringify(p1))
+        console.log(localStorage.getItem(p1))
+    </script>
+    <script>
         var menus = document.querySelector(`#menus`);
 
         //loading icon code
@@ -56,7 +63,7 @@
         const loadButton = document.createElement(`button`)
         loadButton.appendChild(document.createTextNode(`Continue`))
         loadButton.setAttribute(`id`, `loadGame`)
-        newButton.setAttribute(`data-load`, `true`)
+        loadButton.setAttribute(`data-load`, `true`)
         newMenu.appendChild(loadButton)
 
         const highScores = document.createElement(`button`);
@@ -88,13 +95,13 @@
         newButton.addEventListener(`click`, (e)=>{
             console.log(`NEW`)
             $(`#new`).animate({opacity: 0}, 1000, function(){
-                window.location = `lobby.html?${e.target.dataset.load}`
+                window.location = `lobby.html?load=${e.target.dataset.load}`
             });
         })
         loadButton.addEventListener(`click`, (e)=>{
             console.log(`LOAD`)
             $(`#new`).animate({opacity: 0}, 1000, function(){
-                window.location = `lobby.html?${e.target.dataset.load}`
+                window.location = `lobby.html?load=${e.target.dataset.load}`
             });
         })
         highScores.addEventListener(`click`, (e)=>{

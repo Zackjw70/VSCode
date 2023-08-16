@@ -105,7 +105,7 @@ for (let i = 0; i < player.length; i++)
     
     
 
-    options(i)
+    
 }
 
 

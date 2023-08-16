@@ -99,13 +99,6 @@ for (let i = 0; i < player.length; i++)
         currentState = `pause`
     })
 
-    
-
-    
-    
-    
-
-    options(i)
 }
 
 
