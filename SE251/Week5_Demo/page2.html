@@ -8,8 +8,12 @@
 <body>
     <p></p>
     <script>
-        console.log(location.search)
-        var urlParam = new URLSearchParams(location.search);
+        var obj = JSON.parse(localStorage.getItem(`color`))
+        console.log(obj)
+        if(obj != null)
+        {
+            document.querySelector(`body`).style.background=obj.color
+        }
     </script>
 </body>
 </html>

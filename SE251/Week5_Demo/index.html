@@ -7,12 +7,25 @@
 </head>
 <body>
     <input type="color">
-    <button>Submit</button>
+    <button id="submit">Submit</button>
+    <button id="save">Save</button>
     <script>
-        var button = document.querySelector(`button`)
+        
+
+
+        var button = document.querySelector(`#submit`)
+        var saveButton = document.querySelector(`#save`)
+        var input = document.querySelector(`input`)
+
+        var p1;
+
         button.addEventListener(`click`, (e)=>{
-            window.location = `page2.html?color=yellow`
+            console.log(input.value)
+            window.location = `page2.html?color=${input.value.replace(`#`, `%23`)}`
         })
+
+
+        
     </script>
 </body>
 </html>

@@ -31,9 +31,25 @@
             {name:`aaa`, score:1000},
             {name:`bbb`, score:980}
         ]
+        var message
+
+        message = `<div id="high-scores">`;
+            console.log(highScoreList[0].name)
+        for (let i = 0; i < highScoreList.length; i++){
+            message += `${highScoreList[i].name}    ${highScoreList[i].score}<br />`
+            
+        }
+        message += `</div>`
+        console.log(message)
+
+        document.querySelector(`#menus`).innerHTML += message;
+        
+
+
+        
         
         //
-        var menus = document.querySelector(`#menus`);
+        
 
         
        
