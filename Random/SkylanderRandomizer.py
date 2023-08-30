@@ -5,10 +5,10 @@ skylanders = (
     "Tree Rex", "Shroom Boom", "Camo", "Zook", "Stump Smash", "Stealth Elf",
     "Ninjini", "Pop Fizz", "Spyro", "VooDood", "Double Trouble", "Wrecking Ball",
     "Hot Head", "Hot Dog", "FlameSlinger", "Eruptor", "Ignitor", "Sunburn",
-    "ThumpBack", "Chill", "Whamshell", "Slam Bam", "Zap", "Gill Grunt",
+    "ThumpBack", "Chill","Gill Grunt 2", "Whamshell", "Slam Bam", "Zap", "Gill Grunt",
     "Eye Brawl", "Fright Rider", "Chop Chop 2", "Cynder 2", "Chop Chop", "Cynder", "Hex", "Ghost Roaster",
     "Crusher", "Flashwing", "Dino Rang", "Terrafin", "Prism Break", "Bash",
-    "Bouncer", "Sprocket", "Drill Sergent", "Drobot", "Trigger Happy", "Boomer",
+    "Bouncer", "Sprocket", "Drobot 2", "Drill Sergent", "Drobot", "Trigger Happy", "Boomer",
     "Swarm", "Jet Vac", "Lightning Rod", "Whirlwind", "Sonic Boom", "Warnado" 
 )
 cont = input("1 or 2: ")

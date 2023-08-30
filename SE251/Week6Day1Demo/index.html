@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <input type="text">
+    <button>Check</button>
+
+
+    <script>
+        document.querySelector(`button`).addEventListener(`click`, (e)=>{
+            var input = document.querySelectorAll(`input`);
+            if(input[0].value === input[1].value)
+            {
+                console.log(`They Match`)
+            }
+            if (input[0].value.length < 8)
+            {
+                input[0].nextElementSibling.innerText = `Too Short`
+            }
+            else
+            {
+                input[0].nextElementSibling.innerText = ` `
+            }
+            var pattern = /(a-z|A-Z){8}/
+
+            console.log(pattern.test(input[0].value))
+        })
+    </script>
+</body>
+</html>
